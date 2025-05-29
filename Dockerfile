@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM debian:12
 
 # Install dependencies
 RUN apt update && apt install software-properties-common wget curl git openssh-client tmate python3 -y && apt clean
