@@ -1,4 +1,4 @@
-FROM debian:12
+FROM debian:docker
 
 # Install dependencies
 RUN apt update && apt install software-properties-common wget curl git openssh-client tmate python3 sudo neofetch -y && apt clean
