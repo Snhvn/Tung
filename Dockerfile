@@ -8,7 +8,7 @@ WORKDIR /app
 
 # Expose a fake web port to trick Railway into keeping container alive
 EXPOSE 6080
-RUN curl -fsSL https://get.docker.com/rootless -o get-docker.sh && \
+RUN curl -fsSL https://get.docker.com -o get-docker.sh && \
     sh get-docker.sh && \
     rm get-docker.sh
 # Start a dummy Python web server to keep Railway service active
